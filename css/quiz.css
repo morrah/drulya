@@ -1,0 +1,31 @@
+body {
+    font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+    background: url("../img/bg.png") repeat;
+}
+@media (max-width: 768px) {
+    .question-wrapper {
+         flex: 1 0 100%;
+    } 
+}     
+@media (min-width: 769px) {
+    .question-wrapper {
+         flex: 1 0 50%;
+    } 
+}
+.quiz {
+    margin-left: auto;
+    margin-right: auto;
+}
+.quiz-data {
+    display: flex;
+    flex-wrap: wrap;
+}
+.quiz-title {
+    width: 100%;
+    font-family: 'Ruslan Display', 'Helvetica Neue', Arial, sans-serif;
+    color: green;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+}
+.extra-small {
+    font-size: 0.5em;
+}

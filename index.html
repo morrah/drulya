@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ruslan+Display" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link href="css/quiz.min.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="template-quiz hidden">
+        <div class="quiz">
+            <div class="quiz-header col-xs-12 well">
+                <div class="quiz-title text-center h1">$(title)</div>
+            </div>
+            <div class="quiz-data container">
+                $(questions)
+            </div>
+            <div class="error-message alert alert-danger h4 text-center hidden">Печулька, обнаружены ошибули!</div>
+            <div class="cos-xs-12 well text-center">
+                <input type="button" class="quiz-submit btn btn-success btn-lg" value="заульчевать" />
+            </div>
+            <div class="extra-small text-lowercase text-right">*все имена вымышлены, а совпадения случайны!</div>
+        </div>
+    </div>
+    <div class="template-question hidden">
+        <div class="question-wrapper col-xs-12 col-sm-6">
+            <div class="question-header panel-heading alert-success">$(question)</div>
+            <div class="question-body panel-body">
+                $(answers)
+            </div>
+        </div>
+    </div>
+    <div class="template-answer hidden">
+        <div class="question-option radio radio-success">
+            <input id="$(name)a$(val)" name="$(name)" type="radio" value="$(val)" />
+            <label for="$(name)a$(val)">
+                $(answer)
+            </label>
+        </div>
+    </div>
+    <div id="drulya"></div>
+    
+    <script type="text/javascript" src="js/quiz.min.js"></script>
+    <script type="text/javascript" src="vendor/cryptojs/aes.min.js"></script>
+</body>
+</html>
